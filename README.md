@@ -1,4 +1,4 @@
-# Mini-netflix
+# React-Mini-netflix
 
 #Installation
 Kindly clone or download a zip copy of the app.
