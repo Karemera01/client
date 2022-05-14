@@ -1,0 +1,26 @@
+.text-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-title h1 {
+  color: #FF0000;
+}
+
+.text-title button {
+  width: 200px;
+  height: 40px;
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 8px;
+  color: #e8e8e8;
+  font-size: 34px;
+}
+/*# sourceMappingURL=Title.css.map */

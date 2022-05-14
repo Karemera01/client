@@ -1,0 +1,32 @@
+//mixins
+@mixin styledButton($color, $fontsize)
+{
+    width: 200px;
+    height: 40px;
+    background-color: $color;
+    border: none;
+    border-radius: 8px;
+    color: $mainWhite;
+    font-size: $fontsize;
+}
+
+@mixin item-flex($justify-content, $align-item) {
+    display: flex;
+    align-items: $align-item;
+    justify-content: $justify-content;
+}
+
+@mixin mobile {
+    @media only screen and (max-width: $mobileResponsiveWidth) {
+        @content;
+    }
+    
+}
+
+@mixin tablet {
+    @media only screen and (max-width: $tabletResponsiveWidth) {
+        @content;
+    }
+    
+}
+

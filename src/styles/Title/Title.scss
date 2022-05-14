@@ -1,0 +1,20 @@
+@import '../../stylesVariables/stylesVariables.scss';
+
+
+.text-title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1
+    {
+        color: $mainRed;
+    }
+
+    button
+    {
+        @include styledButton($mainWhite,34px);
+    }
+}
+

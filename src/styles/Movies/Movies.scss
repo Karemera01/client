@@ -1,0 +1,104 @@
+@import '../../stylesVariables/stylesVariables.scss';
+
+.movie-container
+{
+
+    margin: auto;
+    width: 50%;
+    border: 3px solid $mainRed;
+    padding: 10px;
+
+    height: 25rem;
+    width: 65%;
+    align-items: center;
+    position: relative;
+    background-color:$mainWhite;
+    box-shadow: 0 0 10px $secondaryTextColor;
+    overflow: hidden;
+    margin: 3rem;
+    display: grid;
+    text-align: center;
+    grid-template-rows: 55% 10% 5% 20% 10%;
+    grid-template-areas: "img-sec" "name-sec" "title-sec" "desc-sec" "ratings-sec";
+
+    &:hover
+    {
+        box-shadow: 0 0 20px $secondaryTextColor;
+    }
+
+}
+
+
+.img-section
+{
+    grid-area: img-sec;
+    overflow: hidden;
+    position: relative;
+
+    .img-div
+    {
+        background-color: aliceblue;
+        height: 25rem;
+        width: 10rem;
+        position: absolute;
+        transform: rotate(70deg);
+        top: 6rem;
+        left: 5rem;
+
+    }
+
+    .img-div-style
+    {
+        height: 100%;
+        width: 20rem;
+    }
+}
+
+.name-secion
+{
+    grid-area: name-sec;
+    font-size: 1.8rem;
+}
+
+.sub-image-sec
+{
+    position:absolute;
+    height: 10rem;
+    width: 10rem;
+    box-shadow: 0 0 0 10px aliceblue;
+    border-radius: 50%;
+    top: calc(50% - 10rem);
+    left: calc(50% - 5rem);
+}
+
+.title-section
+{
+    grid-area: title-sec;
+    font-size: 1.2rem;
+    text-align: center;
+    color: $mainDark;
+}
+
+.ratings-section
+{
+    grid-area: ratings-sec;
+    margin: auto;
+
+    .ratings-section-style
+    {
+        height: 2rem;
+        margin: 0 1rem;
+        transition:  all 0.3s;
+
+        &:hover
+        {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.desc-section
+{
+    grid-area: desc-sec;
+    margin: 0.5rem 1.5rem;
+}

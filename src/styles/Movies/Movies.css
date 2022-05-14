@@ -1,0 +1,106 @@
+.movie-container {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #FF0000;
+  padding: 10px;
+  height: 25rem;
+  width: 65%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px #9c9b9b;
+          box-shadow: 0 0 10px #9c9b9b;
+  overflow: hidden;
+  margin: 3rem;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -ms-grid-rows: 55% 10% 5% 20% 10%;
+      grid-template-rows: 55% 10% 5% 20% 10%;
+      grid-template-areas: "img-sec" "name-sec" "title-sec" "desc-sec" "ratings-sec";
+}
+
+.movie-container:hover {
+  -webkit-box-shadow: 0 0 20px #9c9b9b;
+          box-shadow: 0 0 20px #9c9b9b;
+}
+
+.img-section {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img-sec;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-section .img-div {
+  background-color: aliceblue;
+  height: 25rem;
+  width: 10rem;
+  position: absolute;
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+  top: 6rem;
+  left: 5rem;
+}
+
+.img-section .img-div-style {
+  height: 100%;
+  width: 20rem;
+}
+
+.name-secion {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: name-sec;
+  font-size: 1.8rem;
+}
+
+.sub-image-sec {
+  position: absolute;
+  height: 10rem;
+  width: 10rem;
+  -webkit-box-shadow: 0 0 0 10px aliceblue;
+          box-shadow: 0 0 0 10px aliceblue;
+  border-radius: 50%;
+  top: calc(50% - 10rem);
+  left: calc(50% - 5rem);
+}
+
+.title-section {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: title-sec;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #181818;
+}
+
+.ratings-section {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: ratings-sec;
+  margin: auto;
+}
+
+.ratings-section .ratings-section-style {
+  height: 2rem;
+  margin: 0 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ratings-section .ratings-section-style:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.desc-section {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: desc-sec;
+  margin: 0.5rem 1.5rem;
+}
+/*# sourceMappingURL=Movies.css.map */
