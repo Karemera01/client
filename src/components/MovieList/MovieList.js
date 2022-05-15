@@ -29,7 +29,7 @@ const MovieList = () => {
     const movies = useSelector((state) => state.allMovies.movies);
     const dispatch = useDispatch();
 
-    const getUserDetails = async () => {
+    const getMovieDetails = async () => {
         const feedbackResponse = await axios.get("http://www.omdbapi.com/?s=star wars&apikey=2890625f")
             .catch((err) => {
                 console.error(err);
@@ -38,7 +38,7 @@ const MovieList = () => {
     };
 
     useEffect(() => {
-        getUserDetails();
+        getMovieDetails();
     }, []);
 
 
