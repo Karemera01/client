@@ -2,17 +2,13 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 import { setMovies } from '../../redux/actions/movieActions';
-// import { Table, Space } from 'antd';
 import { Link } from 'react-router-dom';
 import Title from '../Title/Title';
 import Grid from '../Grid/Grid';
 import MovieCard from '../MovieCard/MovieCard';
 
 
-// const { Column } = Table;
-const sumFunction = (a, b) => {
-    return a + b;
-};
+
 const setData = (data, movies) => {
     for (let i = 1; i < 9; i++) {
         data.push({
@@ -78,5 +74,5 @@ const MovieList = () => {
     )
 }
 export default MovieList;
-export { sumFunction, setData };
+export { setData };
 
